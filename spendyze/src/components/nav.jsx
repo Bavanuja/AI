@@ -43,7 +43,7 @@ export default function Nav() {
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ color: '#000000' }}
+              sx={{ color: '#ffffff' }}
               onClick={toggleDrawer(true)}
             >
               <MenuIcon />
@@ -52,32 +52,41 @@ export default function Nav() {
           <Typography
             variant="h4"
             component="div"
-            sx={{ color: '#C39177', fontFamily: 'roboto',marginLeft:'50px'  }}
+            sx={{ color: '#5C3810 ', fontFamily: 'roboto',marginLeft:'50px'  }}
           >
             Spendyze
           </Typography>
 
           {!isMobile && (
-            <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: 2 }}>
-              <Button sx={{ color: '#000000', fontFamily: 'roboto' }}>About</Button>
-              <Button sx={{ color: '#000000', fontFamily: 'roboto' }}>Features</Button>
-              <Button sx={{ color: '#000000', fontFamily: 'roboto' }}>AI Consultation</Button>
+            <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: 4 ,}}>
+              <Button sx={{ color: '#000000', fontFamily: 'roboto','&:hover': {
+        backgroundColor: '#864E22', // Change hover color to gold
+        color: '#FFFFFF', // Change text color on hover
+      }, }}>About</Button>
+              <Button sx={{marginLeft: 2 , color: '#000000', fontFamily: 'roboto','&:hover': {
+        backgroundColor: '#864E22', // Change hover color to gold
+        color: '#FFFFFF', // Change text color on hover
+      }, }}>Features</Button>
+              <Button sx={{ marginLeft: 2 ,color: '#000000', fontFamily: 'roboto' ,'&:hover': {
+        backgroundColor: '#864E22', // Change hover color to gold
+        color: '#FFFFFF', // Change text color on hover
+      },}}>AI Consultation</Button>
             </Box>
           )}
         </Box>
 
         {/* Right side: Visit App (always visible) */}
-        <Box sx={{ display: 'flex', alignItems: 'center', }}>
+        <Box sx={{ display: 'flex', alignItems: 'center',marginTop:'30px' }}>
           <Button
             
             variant="contained"
-            sx={{ backgroundColor: '#C39177', // Gold color
+            sx={{ backgroundColor: '#864E22', // Gold color
               color: '#ffffff',
               padding: '10px 35px', // Make the button big and long
               fontSize: '1.1rem',
               fontFamily: 'Roboto',
               '&:hover': {
-                backgroundColor: '#C39177', // Slightly darker gold on hover
+                backgroundColor: '#864E22', // Slightly darker gold on hover
               },
             }}
           >

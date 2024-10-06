@@ -14,7 +14,7 @@ export default function AI() {
     >
         <Typography
         sx={{
-            color: '#C39177',
+            color: '#C97C26',
             marginBottom:'50px', 
             fontFamily:'roboto', 
             fontSize: '30px'
@@ -71,13 +71,13 @@ export default function AI() {
           <Button
             variant="contained"
             sx={{
-              backgroundColor: '#C39177', // Gold color button
+              backgroundColor: '#864E22', // Gold color button
               color: '#ffffff',
               padding: '10px 30px',
               fontSize: '1rem',
               fontFamily: 'Roboto',
               '&:hover': {
-                backgroundColor: '#C39177', // Slightly darker gold on hover
+                backgroundColor: '#864E22', // Slightly darker gold on hover
               },
             }}
           >

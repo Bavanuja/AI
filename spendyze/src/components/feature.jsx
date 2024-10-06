@@ -31,7 +31,7 @@ export default function Feature() {
     >
         <Typography
         sx={{
-            color: '#C39177',
+            color: '#C97C26 ',
             marginBottom:'50px', 
             fontFamily:'roboto', 
             fontSize: '30px'

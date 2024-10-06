@@ -19,9 +19,8 @@ export default function About() {
         variant="h2"
         sx={{
           fontFamily: 'Roboto',
-          fontWeight: 'bold',
           fontSize:'200px',
-          color: '#AA6C39 ', // Gold color
+          color: '#5C3810', // Gold color
           marginBottom: '20px',
         }}
       >
@@ -52,7 +51,7 @@ export default function About() {
           fontSize: '1rem',
           padding: '10px 20px',
           '&:hover': {
-                backgroundColor: '#C39177', // Slightly darker gold on hover
+                backgroundColor: '#864E22', // Slightly darker gold on hover
               },
         }}
       >
