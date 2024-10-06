@@ -36,8 +36,8 @@ export default function Nav() {
   return (
     <AppBar sx={{ backgroundColor: 'white', color: '#000000', boxShadow: 'none' }}>
       <Toolbar>
-        {/* Left side: Hamburger menu (on mobile) and Logo */}
-        <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+        
+        <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1,marginTop:'20px' }}>
           {isMobile && (
             <IconButton
               edge="start"
@@ -52,36 +52,37 @@ export default function Nav() {
           <Typography
             variant="h4"
             component="div"
-            sx={{ marginLeft: isMobile ? 1 : 0, color: '#FFD700', fontFamily: 'roboto',marginLeft:'50px'  }}
+            sx={{ color: '#C39177', fontFamily: 'roboto',marginLeft:'50px'  }}
           >
             Spendyze
           </Typography>
 
           {!isMobile && (
             <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: 2 }}>
-              <Button sx={{ color: '#000000', fontFamily: 'roboto' }}>Features</Button>
               <Button sx={{ color: '#000000', fontFamily: 'roboto' }}>About</Button>
+              <Button sx={{ color: '#000000', fontFamily: 'roboto' }}>Features</Button>
               <Button sx={{ color: '#000000', fontFamily: 'roboto' }}>AI Consultation</Button>
             </Box>
           )}
         </Box>
 
         {/* Right side: Visit App (always visible) */}
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', }}>
           <Button
-            color="black"
+            
             variant="contained"
-            sx={{ borderColor: '#000000', color: '#000000', marginRight:'20px' }}
+            sx={{ backgroundColor: '#C39177', // Gold color
+              color: '#ffffff',
+              padding: '10px 35px', // Make the button big and long
+              fontSize: '1.1rem',
+              fontFamily: 'Roboto',
+              '&:hover': {
+                backgroundColor: '#C39177', // Slightly darker gold on hover
+              },
+            }}
           >
             Visit App
           </Button>
-          <Button
-              color="#FFD700"
-              variant="contained"
-              sx={{ borderColor: '#000000', color: '#000000',marginRight:'50px' }}
-            >
-              Sign In
-            </Button>
         </Box>
       </Toolbar>
 
